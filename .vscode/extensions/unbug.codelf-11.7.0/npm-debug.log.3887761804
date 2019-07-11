@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'show',
+1 verbose cli   'vsce',
+1 verbose cli   'version' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 silly mapToRegistry name vsce
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'vsce',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'vsce',
+7 silly mapToRegistry   name: 'vsce',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/vsce
+9 verbose request uri https://registry.npmjs.org/vsce
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 10:13:59 PM
+12 verbose request using bearer token for auth
+13 verbose request id 4676ffbcd346cd4d
+14 verbose etag W/"5914175d-13f79"
+15 verbose lastModified Thu, 11 May 2017 07:48:45 GMT
+16 http request GET https://registry.npmjs.org/vsce
+17 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+18 info attempt registry request try #2 at 10:14:09 PM
+19 verbose request using bearer token for auth
+20 verbose etag W/"5914175d-13f79"
+21 verbose lastModified Thu, 11 May 2017 07:48:45 GMT
+22 http request GET https://registry.npmjs.org/vsce
+23 http 304 https://registry.npmjs.org/vsce
+24 verbose headers { server: 'nginx/1.10.3',
+24 verbose headers   'last-modified': 'Thu, 11 May 2017 07:48:45 GMT',
+24 verbose headers   etag: '"5914175d-13f79"',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Tue, 30 May 2017 14:14:24 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-nrt6129-NRT',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1496153664.026699,VS0,VE627',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 304,
+25 silly get   { server: 'nginx/1.10.3',
+25 silly get     'last-modified': 'Thu, 11 May 2017 07:48:45 GMT',
+25 silly get     etag: '"5914175d-13f79"',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Tue, 30 May 2017 14:14:24 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-nrt6129-NRT',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1496153664.026699,VS0,VE627',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose etag https://registry.npmjs.org/vsce from cache
+27 verbose get saving vsce to /Users/gaolu.li/.npm/registry.npmjs.org/vsce/.cache.json
+28 verbose correctMkdir /Users/gaolu.li/.npm correctMkdir not in flight; initializing
+29 verbose exit [ 0, true ]
+30 verbose stack Error: write EPIPE
+30 verbose stack     at exports._errnoException (util.js:1022:11)
+30 verbose stack     at WriteWrap.afterWrite (net.js:801:14)
+31 verbose cwd /Workspace/labs/vscode-codelf
+32 error Darwin 16.6.0
+33 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "show" "vsce" "version"
+34 error node v6.9.5
+35 error npm  v3.10.10
+36 error code EPIPE
+37 error errno EPIPE
+38 error syscall write
+39 error write EPIPE
+40 error If you need help, you may report this error at:
+40 error     <https://github.com/npm/npm/issues>
+41 verbose exit [ 1, true ]

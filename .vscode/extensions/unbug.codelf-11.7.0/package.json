@@ -1,0 +1,64 @@
+{
+	"name": "codelf",
+	"displayName": "Codelf",
+	"description": "Best GitHub stars, repositories tagger and organizer. Search Github, GitLab to find real-world usage variable names.",
+	"version": "11.7.0",
+	"publisher": "unbug",
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.codelf"
+	],
+	"main": "./extension",
+	"author": {
+		"name": "unbug",
+		"url": "https://github.com/unbug"
+	},
+	"icon": "resources/codelf_logo.png",
+	"homepage": "http://unbug.github.io/codelf/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/unbug/vscode-codelf.git"
+	},
+	"bugs": {
+		"url": "https://github.com/unbug/vscode-codelf/issues"
+	},
+	"contributes": {
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"command": "extension.codelf",
+					"group": "navigation"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "extension.codelf",
+				"title": "Codelf"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"eslint": "^3.6.0",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "485e8574-a825-4190-9589-bb6837b4eebe",
+		"publisherId": "6acdf7b4-4dba-49fa-971c-333755ea368b",
+		"publisherDisplayName": "unbug"
+	}
+}
